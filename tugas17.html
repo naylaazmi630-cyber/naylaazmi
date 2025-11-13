@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kuliner Nusantara</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary-red: #d32f2f;
+      --primary-green: #2e7d32;
+      --light-red: #ffcdd2;
+      --light-green: #c8e6c9;
+    }
+
+    .bg-red { background-color: var(--primary-red); }
+    .bg-green { background-color: var(--primary-green); }
+    .text-red { color: var(--primary-red); }
+    .text-green { color: var(--primary-green); }
+    .btn-red {
+      background-color: var(--primary-red);
+      color: white;
+      border: none;
+    }
+    .btn-red:hover {
+      background-color: #b71c1c;
+      color: white;
+    }
+    .btn-green {
+      background-color: var(--primary-green);
+      color: white;
+      border: none;
+    }
+    .btn-green:hover {
+      background-color: #1b5e20;
+      color: white;
+    }
+    .navbar-custom {
+      background-color: var(--primary-red);
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1517248135467-2c7ed7ba9b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: var(--primary-green);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">
+        <i class="bi bi-shop"></i> Kuliner Nusantara
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#home">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#gallery">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero text-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Selamat Datang di Kuliner Nusantara</h1>
+      <p class="lead">Nikmati cita rasa autentik Indonesia dengan bahan segar dan bumbu tradisional</p>
+      <a href="#menu" class="btn btn-red btn-lg mt-3">Lihat Menu</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-red fw-bold">Tentang Kami</h2>
+          <p class="lead text-muted">
+            Kami adalah rumah makan yang menyajikan hidangan khas Nusantara dengan resep warisan turun-temurun. 
+            Setiap sajian dibuat dengan cinta dan bahan-bahan segar dari petani lokal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-green fw-bold mb-5">Menu Andalan</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="nasgor.jpg">
+            <div class="card-body text-center">
+              <h5 class="card-title text-red">Nasi Goreng Spesial</h5>
+              <p class="card-text">Nasi goreng dengan telur, ayam suwir, dan kerupuk udang.</p>
+              <p class="fw-bold text-green">Rp 25.000</p>
+              <a href="#" class="btn btn-red btn-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="rendang.jpeg">
+            <div class="card-body text-center">
+              <h5 class="card-title text-red">Rendang Daging Sapi</h5>
+              <p class="card-text">Daging sapi empuk dimasak dengan rempah khas Minang.</p>
+              <p class="fw-bold text-green">Rp 35.000</p>
+              <a href="#" class="btn btn-red btn-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="sate ayam.webp">
+            <div class="card-body text-center">
+              <h5 class="card-title text-red">Sate Ayam Madura</h5>
+              <p class="card-text">Sate ayam dengan bumbu kacang khas Madura.</p>
+              <p class="fw-bold text-green">Rp 22.000</p>
+              <a href="#" class="btn btn-red btn-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center text-green fw-bold mb-5">Galeri Kuliner</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="opor ayam.jpg" class="img-fluid rounded shadow-sm" alt="Makanan 1">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="tumpeng.avif" class="img-fluid rounded shadow-sm" alt="Makanan 2">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="serabi.png" class="img-fluid rounded shadow-sm" alt="Makanan 3">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="kelepon.jpg"class="img-fluid rounded shadow-sm" alt="Makanan 4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-red fw-bold mb-5">Hubungi Kami</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Nama Lengkap" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Pesan Anda" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-green">Kirim Pesan</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p><i class="bi bi-telephone"></i> 0812-3456-7890</p>
+        <p><i class="bi bi-envelope"></i> info@kulinernusantara.com</p>
+        <p><i class="bi bi-geo-alt"></i> Jl. Rasa No. 123, Jakarta</p>
+      </div>
+    </div>
+
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Cuisine | Kuliner Internasional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <style>
+    :root {
+      --red: #c62828;
+      --green: #2e7d32;
+      --light-red: #ffebee;
+      --light-green: #e8f5e9;
+    }
+
+    .bg-red { background-color: var(--red); }
+    .bg-green { background-color: var(--green); }
+    .text-red { color: var(--red); }
+    .text-green { color: var(--green); }
+    .btn-red {
+      background-color: var(--red);
+      color: white;
+      border: none;
+    }
+    .btn-red:hover {
+      background-color: #b71c1c;
+      color: white;
+    }
+    .btn-green {
+      background-color: var(--green);
+      color: white;
+      border: none;
+    }
+    .btn-green:hover {
+      background-color: #1b5e20;
+      color: white;
+    }
+
+    .navbar-custom {
+      background-color: var(--red);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .card-img-top {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .flag-icon {
+      width: 30px;
+      height: 20px;
+      object-fit: cover;
+      border-radius: 3px;
+      margin-right: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      background-color: var(--green);
+      color: white;
+    }
+
+    .section-title {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background-color: var(--red);
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">
+        <i class="bi bi-globe"></i> World Cuisine
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#home">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#gallery">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero text-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Jelajahi Rasa Dunia</h1>
+      <p class="lead mb-4">Hidangan autentik dari Italia, Jepang, India, Meksiko, dan banyak lagi</p>
+      <a href="#menu" class="btn btn-red btn-lg">Lihat Menu Internasional</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-red fw-bold section-title mx-auto">Tentang World Cuisine</h2>
+          <p class="lead text-muted mt-4">
+            Kami menghadirkan pengalaman kuliner global dengan resep asli dari chef berpengalaman. 
+            Setiap hidangan disiapkan dengan bahan berkualitas tinggi dan bumbu khas negara asalnya.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-green fw-bold mb-5 section-title mx-auto">Menu Internasional</h2>
+      <div class="row g-4">
+
+        <!-- Pizza Margherita (Italia) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Pizza">
+            <div class="card-body text-center">
+              <h5 class="card-title text-red d-flex align-items-center justify-content-center">
+                <img src="https://flagcdn.com/it.svg" class="flag-icon" alt="Italia"> Pizza Margherita
+              </h5>
+              <p class="card-text">Pizza klasik Italia dengan saus tomat, mozzarella, dan basil segar.</p>
+              <p class="fw-bold text-green">$12.99</p>
+              <a href="#" class="btn btn-red btn-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sushi Platter (Jepang) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Sushi">
+            <div class="card-body text-center">
+              <h5 class="card-title text-red d-flex align-items-center justify-content-center">
+                <img src="https://flagcdn.com/jp.svg" class="flag-icon" alt="Jepang"> Sushi Platter
+              </h5>
+              <p class="card-text">Assorted nigiri dan maki dengan salmon, tuna, dan avocado.</p>
+              <p class="fw-bold text-green">$18.99</p>
+              <a href="#" class="btn btn-red btn-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Butter Chicken (India) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1603894586910-30d5f4e2a0c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Butter Chicken">
+            <div class="card-body text-center">
+              <h5 class="card-title text-red d-flex align-items-center justify-content-center">
+                <img src="https://flagcdn.com/in.svg" class="flag-icon" alt="India"> Butter Chicken
+              </h5>
+              <p class="card-text">Ayam kari lembut dengan saus tomat, mentega, dan krim.</p>
+              <p class="fw-bold text-green">$14.99</p>
+              <a href="#" class="btn btn-red btn-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tacos Al Pastor (Meksiko) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Tacos">
+            <div class="card-body text-center">
+              <h5 class="card-title text-red d-flex align-items-center justify-content-center">
+                <img src="https://flagcdn.com/mx.svg" class="flag-icon" alt="Meksiko"> Tacos Al Pastor
+              </h5>
+              <p class="card-text">Taco daging babi panggang dengan nanas, bawang, dan cilantro.</p>
+              <p class="fw-bold text-green">$9.99</p>
+              <a href="#" class="btn btn-red btn-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Croissant & Coffee (Prancis) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Croissant">
+            <div class="card-body text-center">
+              <h5 class="card-title text-red d-flex align-items-center justify-content-center">
+                <img src="https://flagcdn.com/fr.svg" class="flag-icon" alt="Prancis"> Croissant & Café
+              </h5>
+              <p class="card-text">Croissant mentega hangat disajikan dengan kopi au lait.</p>
+              <p class="fw-bold text-green">$7.99</p>
+              <a href="#" class="btn btn-red btn-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pad Thai (Thailand) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1559314809-0d1550353d75?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Pad Thai">
+            <div class="card-body text-center">
+              <h5 class="card-title text-red d-flex align-items-center justify-content-center">
+                <img src="https://flagcdn.com/th.svg" class="flag-icon" alt="Thailand"> Pad Thai
+              </h5>
+              <p class="card-text">Mie tumis dengan udang, tauge, kacang, dan telur.</p>
+              <p class="fw-bold text-green">$11.99</p>
+              <a href="#" class="btn btn-red btn-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center text-green fw-bold mb-5 section-title mx-auto">Galeri Dunia Kuliner</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="https://images.unsplash.com/photo-1606787366852-c2a07f3c0a02?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="img-fluid rounded shadow-sm" alt="Pasta">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="https://images.unsplash.com/photo-1625937288805-1d5c52d403c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="img-fluid rounded shadow-sm" alt="Ramen">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="https://images.unsplash.com/photo-1563379926893-4c6a5d0b975d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="img-fluid rounded shadow-sm" alt="Curry">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="img-fluid rounded shadow-sm" alt="Tacos">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-red fw-bold mb-5 section-title mx-auto">Hubungi Kami</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Nama Anda" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Pesan atau Reservasi" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-green">Kirim Pesan</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <p><i class="bi bi-telephone-fill"></i> +62 21 1234-5678</p>
+        <p><i class="bi bi-envelope-fill"></i> hello@worldcuisine.com</p>
+        <p><i class="bi bi-geo-alt-fill"></i> Jl. Global Rasa No. 88, Jakarta</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 World Cuisine. Dibuat dengan <i class="bi bi-heart-fill text-danger"></i> dan Bootstrap 5</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Kuliner Nusantara. Dibuat dengan <i class="bi bi-heart-fill text-danger"></i> dan Bootstrap 5</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
